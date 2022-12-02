@@ -9,11 +9,23 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "bootstrap": "^4.5.3",
+    "bootstrap-vue": "^2.21.2",
     "core-js": "^3.25.3",
+    "css-loader": "4.2.0",
     "nuxt": "^2.15.8",
     "vue": "^2.7.10",
+    "vue-carousel": "^0.18.0",
+    "vue-feather-icons": "^5.1.0",
+    "vue-navigation-bar": "^5.0.2",
+    "vue-router": "^3.4.9",
     "vue-server-renderer": "^2.7.10",
     "vue-template-compiler": "^2.7.10"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.0",
+    "@vue/cli-service": "^4.5.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^10.1.1"
+  }
 }
