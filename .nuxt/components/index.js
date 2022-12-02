@@ -1,8 +1,8 @@
-export const Footer = () => import('../../components/Footer.vue' /* webpackChunkName: "components/footer" */).then(c => wrapFunctional(c.default || c))
-export const Navbar = () => import('../../components/Navbar.vue' /* webpackChunkName: "components/navbar" */).then(c => wrapFunctional(c.default || c))
-export const Switcher = () => import('../../components/Switcher.vue' /* webpackChunkName: "components/switcher" */).then(c => wrapFunctional(c.default || c))
-export const Team = () => import('../../components/Team.vue' /* webpackChunkName: "components/team" */).then(c => wrapFunctional(c.default || c))
-export const Testimonial = () => import('../../components/Testimonial.vue' /* webpackChunkName: "components/testimonial" */).then(c => wrapFunctional(c.default || c))
+export { default as Footer } from '../../components/Footer.vue'
+export { default as Navbar } from '../../components/Navbar.vue'
+export { default as Switcher } from '../../components/Switcher.vue'
+export { default as Team } from '../../components/Team.vue'
+export { default as Testimonial } from '../../components/Testimonial.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
