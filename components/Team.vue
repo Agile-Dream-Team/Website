@@ -1,3 +1,29 @@
+<script>
+import {
+  FacebookIcon,
+  InstagramIcon,
+  TwitterIcon,
+  LinkedinIcon,
+} from "vue-feather-icons";
+
+export default {
+  props: {
+    teamData: {
+      type: Array,
+      default: [],
+    },
+  },
+  components: {
+    FacebookIcon,
+    InstagramIcon,
+    TwitterIcon,
+    LinkedinIcon,
+  },
+  data() {
+    return {};
+  },
+};
+</script>
 
 <template>
   <div class="row">
@@ -50,29 +76,3 @@
     <!--end col-->
   </div>
 </template>
-<script>
-import {
-  FacebookIcon,
-  InstagramIcon,
-  TwitterIcon,
-  LinkedinIcon,
-} from "vue-feather-icons";
-
-export default {
-  props: {
-    teamData: {
-      type: Array,
-      default: [],
-    },
-  },
-  components: {
-    FacebookIcon,
-    InstagramIcon,
-    TwitterIcon,
-    LinkedinIcon,
-  },
-  data() {
-    return {};
-  },
-};
-</script>

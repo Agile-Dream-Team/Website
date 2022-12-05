@@ -1,6 +1,108 @@
+<script>
+import { ArrowUpIcon, ArrowRightIcon } from "vue-feather-icons";
+
+import Navbar from "@/components/navbar";
+import Switcher from "@/components/switcher";
+import Footer from "@/components/footer";
+import Testimonial from "@/components/testimonial";
+import Team from "@/components/team";
+
+/**
+ * Index-developer component
+ */
+export default {
+  components: {
+    Navbar,
+    Switcher,
+    Footer,
+    ArrowUpIcon,
+    ArrowRightIcon,
+    Testimonial,
+    Team,
+  },
+  data() {
+    return {
+      testimonialData: [
+        {
+          id: 1,
+          profile: "images/client/01.jpg",
+          message:
+            "It seems that only fragments of the original text remain in the Lorem Ipsum texts used today.",
+          name: "Thomas Israel",
+          designation: "C.E.O",
+        },
+        {
+          id: 2,
+          profile: "images/client/02.jpg",
+          message:
+            "One disadvantage of Lorum Ipsum is that in Latin certain letters appear more frequently than others.",
+          name: "Barbara McIntosh",
+          designation: "M.D",
+        },
+        {
+          id: 3,
+          profile: "images/client/03.jpg",
+          message:
+            "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century.",
+          name: "Carl Oliver",
+          designation: "P.A",
+        },
+        {
+          id: 4,
+          profile: "images/client/04.jpg",
+          message:
+            "According to most sources, Lorum Ipsum can be traced back to a text composed by Cicero.",
+          name: "Christa Smith",
+          designation: "Manager",
+        },
+        {
+          id: 5,
+          profile: "images/client/05.jpg",
+          message:
+            "There is now an abundance of readable dummy texts. These are usually used when a text is required.",
+          name: "Dean Tolle",
+          designation: "Developer",
+        },
+        {
+          id: 6,
+          profile: "images/client/05.jpg",
+          message:
+            "Thus, Lorem Ipsum has only limited suitability as a visual filler for German texts.",
+          name: "Jill Webb",
+          designation: "Designer",
+        },
+      ],
+      teamData: [
+        {
+          image: "images/medical/01.jpg",
+          name: "Ronny Jofra",
+          designation: "Cardiologist",
+        },
+        {
+          image: "images/medical/04.jpg",
+          name: "Micheal Carlo",
+          designation: "Surgeon",
+        },
+        {
+          image: "images/medical/02.jpg",
+          name: "Aliana Rosy",
+          designation: "Physician",
+        },
+        {
+          image: "images/medical/03.jpg",
+          name: "Sofia Razaq",
+          designation: "Chemist",
+        },
+      ],
+    };
+  },
+};
+</script>
+
 <template>
   <div>
     <Navbar />
+
     <!-- Hero Start -->
     <section class="bg-half-170 d-table w-100 home-wrapper overflow-hidden">
       <div class="container">
@@ -31,7 +133,9 @@
               <p class="text-muted mb-0 mt-3">
                 Don't have an account yet?
                 <a href="javascript:void(0)" class="text-primary ml-2 h6 mb-0"
-                  >Signup  <arrow-right-icon class="fea icon-sm"></arrow-right-icon></a>
+                  >Signup
+                  <arrow-right-icon class="fea icon-sm"></arrow-right-icon
+                ></a>
               </p>
             </div>
           </div>
@@ -60,7 +164,7 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 col-12">
             <div
-              class="card features fea-primary rounded p-4 bg-white position-relative overflow-hidden border-0"
+              class="card features fea-primary rounded p-4 bg-primary position-relative overflow-hidden border-0"
             >
               <span class="h1 icon2 text-primary">
                 <i class="uil uil-newspaper"></i>
@@ -177,22 +281,22 @@
                     class="mdi mdi-play text-primary rounded-circle bg-white shadow"
                   ></i>
                 </a>
-                 <b-modal
-                id="modal-1"
-                hide-footer
-                size="lg"
-                header-close-variant="white"
-                header-class="border-0"
-                content-class="border-0"
-                centered
-              >
-                <vimeo-player
-                  ref="player"
-                  :player-width="750"
-                  :player-height="450"
-                  :video-id="287684225"
-                />
-              </b-modal>
+                <b-modal
+                  id="modal-1"
+                  hide-footer
+                  size="lg"
+                  header-close-variant="white"
+                  header-class="border-0"
+                  content-class="border-0"
+                  centered
+                >
+                  <vimeo-player
+                    ref="player"
+                    :player-width="750"
+                    :player-height="450"
+                    :video-id="287684225"
+                  />
+                </b-modal>
               </div>
             </div>
           </div>
@@ -245,7 +349,9 @@
           <div class="col-md-4 mt-4 mt-sm-0 d-none d-md-block">
             <div class="text-center text-md-right">
               <a href="javascript:void(0)" class="text-primary h6"
-                >See More  <arrow-right-icon class="fea icon-sm"></arrow-right-icon></a>
+                >See More
+                <arrow-right-icon class="fea icon-sm"></arrow-right-icon
+              ></a>
             </div>
           </div>
           <!--end col-->
@@ -255,7 +361,7 @@
         <div class="row">
           <div class="col-md-4 mt-4 pt-2">
             <ul
-              class="nav nav-pills nav-justified flex-column bg-white rounded shadow p-3 mb-0 sticky-bar"
+              class="nav nav-pills nav-justified flex-column bg-terciary rounded shadow p-3 mb-0 sticky-bar"
               id="pills-tab"
               role="tablist"
             >
@@ -368,7 +474,7 @@
           <div class="col-md-8 col-12 mt-4 pt-2">
             <div class="tab-content" id="pills-tabContent">
               <div
-                class="tab-pane fade bg-white show active p-4 rounded shadow"
+                class="tab-pane fade bg-terciary show active p-4 rounded shadow"
                 id="dental"
                 role="tabpanel"
                 aria-labelledby="dentalcare"
@@ -388,7 +494,8 @@
                   </p>
                   <a href="javascript:void(0)" class="text-primary"
                     >Learn More
-                    <arrow-right-icon class="fea icon-sm"></arrow-right-icon></a>
+                    <arrow-right-icon class="fea icon-sm"></arrow-right-icon
+                  ></a>
                 </div>
               </div>
               <!--end teb pane-->
@@ -414,7 +521,8 @@
                   </p>
                   <a href="javascript:void(0)" class="text-primary"
                     >Learn More
-                     <arrow-right-icon class="fea icon-sm"></arrow-right-icon></a>
+                    <arrow-right-icon class="fea icon-sm"></arrow-right-icon
+                  ></a>
                 </div>
               </div>
               <!--end teb pane-->
@@ -440,7 +548,8 @@
                   </p>
                   <a href="javascript:void(0)" class="text-primary"
                     >Learn More
-                     <arrow-right-icon class="fea icon-sm"></arrow-right-icon></a>
+                    <arrow-right-icon class="fea icon-sm"></arrow-right-icon
+                  ></a>
                 </div>
               </div>
               <!--end teb pane-->
@@ -466,7 +575,8 @@
                   </p>
                   <a href="javascript:void(0)" class="text-primary"
                     >Learn More
-                    <arrow-right-icon class="fea icon-sm"></arrow-right-icon></a>
+                    <arrow-right-icon class="fea icon-sm"></arrow-right-icon
+                  ></a>
                 </div>
               </div>
               <!--end teb pane-->
@@ -492,7 +602,8 @@
                   </p>
                   <a href="javascript:void(0)" class="text-primary"
                     >Learn More
-                    <arrow-right-icon class="fea icon-sm"></arrow-right-icon></a>
+                    <arrow-right-icon class="fea icon-sm"></arrow-right-icon
+                  ></a>
                 </div>
               </div>
               <!--end teb pane-->
@@ -518,7 +629,8 @@
                   </p>
                   <a href="javascript:void(0)" class="text-primary"
                     >Learn More
-                    <arrow-right-icon class="fea icon-sm"></arrow-right-icon></a>
+                    <arrow-right-icon class="fea icon-sm"></arrow-right-icon
+                  ></a>
                 </div>
               </div>
               <!--end teb pane-->
@@ -538,7 +650,7 @@
     <section class="section pt-0">
       <div class="container">
         <div class="position-relative" style="z-index: 1">
-          <div class="rounded shadow bg-white p-4">
+          <div class="rounded shadow bg-terciary p-4">
             <div class="row" id="counter">
               <div class="col-md-4">
                 <div class="counter-box text-center">
@@ -636,7 +748,7 @@
           </div>
           <!--end row-->
         </div>
-        <div class="feature-posts-placeholder bg-primary"></div>
+        <div class="feature-posts-placeholder bg-secondary"></div>
       </div>
       <!--end container-->
     </section>
@@ -697,7 +809,7 @@
 
     <!-- Start -->
     <div class="container-fluid px-0">
-      <div class="py-5 bg-footer">
+      <div class="py-5 bg-terciary">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-7">
@@ -757,105 +869,7 @@
     <!-- Back to top -->
   </div>
 </template>
-<script>
-import { ArrowUpIcon ,ArrowRightIcon} from "vue-feather-icons";
-import Navbar from "@/components/Navbar";
-import Switcher from "@/components/Switcher";
-import Footer from "@/components/Footer";
-import Testimonial from "@/components/Testimonial";
-import Team from "@/components/Team";
 
-/**
- * Index-developer component
- */
-export default {
-  components: {
-    Navbar,
-    Switcher,
-    Footer,
-    ArrowUpIcon,
-    ArrowRightIcon,
-    Testimonial,
-    Team,
-  },
-  data() {
-    return {
-      testimonialData: [
-        {
-          id: 1,
-          profile: "images/client/01.jpg",
-          message:
-            "It seems that only fragments of the original text remain in the Lorem Ipsum texts used today.",
-          name: "Thomas Israel",
-          designation: "C.E.O",
-        },
-        {
-          id: 2,
-          profile: "images/client/02.jpg",
-          message:
-            "One disadvantage of Lorum Ipsum is that in Latin certain letters appear more frequently than others.",
-          name: "Barbara McIntosh",
-          designation: "M.D",
-        },
-        {
-          id: 3,
-          profile: "images/client/03.jpg",
-          message:
-            "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century.",
-          name: "Carl Oliver",
-          designation: "P.A",
-        },
-        {
-          id: 4,
-          profile: "images/client/04.jpg",
-          message:
-            "According to most sources, Lorum Ipsum can be traced back to a text composed by Cicero.",
-          name: "Christa Smith",
-          designation: "Manager",
-        },
-        {
-          id: 5,
-          profile: "images/client/05.jpg",
-          message:
-            "There is now an abundance of readable dummy texts. These are usually used when a text is required.",
-          name: "Dean Tolle",
-          designation: "Developer",
-        },
-        {
-          id: 6,
-          profile: "images/client/05.jpg",
-          message:
-            "Thus, Lorem Ipsum has only limited suitability as a visual filler for German texts.",
-          name: "Jill Webb",
-          designation: "Designer",
-        },
-      ],
-      teamData: [
-        {
-          image: "images/medical/01.jpg",
-          name: "Ronny Jofra",
-          designation: "Cardiologist",
-        },
-        {
-          image: "images/medical/04.jpg",
-          name: "Micheal Carlo",
-          designation: "Surgeon",
-        },
-        {
-          image: "images/medical/02.jpg",
-          name: "Aliana Rosy",
-          designation: "Physician",
-        },
-        {
-          image: "images/medical/03.jpg",
-          name: "Sofia Razaq",
-          designation: "Chemist",
-        },
-      ],
-    };
-  },
-};
-</script>
 <style>
 .modal-content {
   background-color: transparent;

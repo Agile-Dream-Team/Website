@@ -6,6 +6,18 @@ import NuxtError from './components/nuxt-error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
+
+import '../node_modules/bootstrap-vue/dist/bootstrap-vue.css'
+
+import '../assets/css/style-dark.css'
+
+import '../assets/css/colors/purple.css'
+
+import '../node_modules/@fortawesome/fontawesome-svg-core/styles.css'
+
+import '../node_modules/@mdi/font/css/materialdesignicons.css'
+
 import _6f6c098b from './layouts/default.vue'
 
 const layouts = { "_default": sanitizeComponent(_6f6c098b) }
@@ -94,6 +106,10 @@ export default {
 
     isFetching () {
       return this.nbFetching > 0
+    },
+
+    isPreview () {
+      return Boolean(this.$options.previewData)
     },
   },
 

@@ -1,3 +1,25 @@
+<script>
+import {
+  FacebookIcon,
+  InstagramIcon,
+  TwitterIcon,
+  LinkedinIcon,
+  MailIcon,
+} from "vue-feather-icons";
+export default {
+  data() {
+    return {};
+  },
+  components: {
+    FacebookIcon,
+    InstagramIcon,
+    TwitterIcon,
+    LinkedinIcon,
+    MailIcon,
+  },
+};
+</script>
+
 <template>
   <div>
     <!-- Footer Start -->
@@ -249,24 +271,3 @@
     <!--end footer-->
   </div>
 </template>
-<script>
-import {
-  FacebookIcon,
-  InstagramIcon,
-  TwitterIcon,
-  LinkedinIcon,
-  MailIcon,
-} from "vue-feather-icons";
-export default {
-  data() {
-    return {};
-  },
-  components: {
-    FacebookIcon,
-    InstagramIcon,
-    TwitterIcon,
-    LinkedinIcon,
-    MailIcon,
-  },
-};
-</script>

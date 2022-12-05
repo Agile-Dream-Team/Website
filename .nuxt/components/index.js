@@ -1,8 +1,8 @@
-export { default as Footer } from '../../components/Footer.vue'
-export { default as Navbar } from '../../components/Navbar.vue'
-export { default as Switcher } from '../../components/Switcher.vue'
-export { default as Team } from '../../components/Team.vue'
-export { default as Testimonial } from '../../components/Testimonial.vue'
+export { default as Footer } from '../../components/footer.vue'
+export { default as Navbar } from '../../components/navbar.vue'
+export { default as Switcher } from '../../components/switcher.vue'
+export { default as Team } from '../../components/team.vue'
+export { default as Testimonial } from '../../components/testimonial.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

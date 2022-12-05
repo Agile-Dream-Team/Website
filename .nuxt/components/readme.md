@@ -6,8 +6,8 @@ You can directly use them in pages and other components without the need to impo
 
 **Tip:** If a component is conditionally rendered with `v-if` and is big, it is better to use `Lazy` or `lazy-` prefix to lazy load.
 
-- `<Footer>` | `<footer>` (components/Footer.vue)
-- `<Navbar>` | `<navbar>` (components/Navbar.vue)
-- `<Switcher>` | `<switcher>` (components/Switcher.vue)
-- `<Team>` | `<team>` (components/Team.vue)
-- `<Testimonial>` | `<testimonial>` (components/Testimonial.vue)
+- `<Footer>` | `<footer>` (components/footer.vue)
+- `<Navbar>` | `<navbar>` (components/navbar.vue)
+- `<Switcher>` | `<switcher>` (components/switcher.vue)
+- `<Team>` | `<team>` (components/team.vue)
+- `<Testimonial>` | `<testimonial>` (components/testimonial.vue)

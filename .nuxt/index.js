@@ -1,5 +1,5 @@
 import Vue from 'vue'
-
+import Vuex from 'vuex'
 import Meta from 'vue-meta'
 import ClientOnly from 'vue-client-only'
 import NoSsr from 'vue-no-ssr'
@@ -9,10 +9,16 @@ import NuxtError from './components/nuxt-error.vue'
 import Nuxt from './components/nuxt.js'
 import App from './App.js'
 import { setContext, getLocation, getRouteData, normalizeError } from './utils'
+import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_4df65554 from 'nuxt_plugin_plugin_4df65554' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_plugin_f6815332 from 'nuxt_plugin_plugin_f6815332' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_bootstrapvue_46fb95a8 from 'nuxt_plugin_bootstrapvue_46fb95a8' // Source: ./bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_apollomodule_5da7ba6e from 'nuxt_plugin_apollomodule_5da7ba6e' // Source: ./apollo-module.js (mode: 'all')
+import nuxt_plugin_vuescrollto_5ca45b6c from 'nuxt_plugin_vuescrollto_5ca45b6c' // Source: ./vue-scrollto.js (mode: 'client')
+import nuxt_plugin_axios_56cab806 from 'nuxt_plugin_axios_56cab806' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_fontawesome_b8db358e from 'nuxt_plugin_fontawesome_b8db358e' // Source: ../plugins/fontawesome.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -52,18 +58,34 @@ Object.defineProperty(Vue.prototype, '$nuxt', {
 
 Vue.use(Meta, {"keyName":"head","attribute":"data-n-head","ssrAttribute":"data-n-head-ssr","tagIDKeyName":"hid"})
 
-const defaultTransition = {"name":"page","mode":"out-in","appear":false,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
+const defaultTransition = {"name":"page","mode":"out-in","appear":true,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
+
+const originalRegisterModule = Vuex.Store.prototype.registerModule
+
+function registerModule (path, rawModule, options = {}) {
+  const preserveState = process.client && (
+    Array.isArray(path)
+      ? !!path.reduce((namespacedState, path) => namespacedState && namespacedState[path], this.state)
+      : path in this.state
+  )
+  return originalRegisterModule.call(this, path, rawModule, { preserveState, ...options })
+}
 
 async function createApp(ssrContext, config = {}) {
   const router = await createRouter(ssrContext, config)
+
+  const store = createStore(ssrContext)
+  // Add this.$router into store actions/mutations
+  store.$router = router
 
   // Create Root instance
 
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"adt-website","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
+    head: {"title":"Agile Dream Team","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
 
+    store,
     router,
     nuxt: {
       defaultTransition,
@@ -108,6 +130,9 @@ async function createApp(ssrContext, config = {}) {
     ...App
   }
 
+  // Make app available into store via this.app
+  store.app = app
+
   const next = ssrContext ? ssrContext.next : location => app.router.push(location)
   // Resolve route
   let route
@@ -120,6 +145,7 @@ async function createApp(ssrContext, config = {}) {
 
   // Set context to app.context
   await setContext(app, {
+    store,
     route,
     next,
     error: app.nuxt.error.bind(app),
@@ -146,6 +172,9 @@ async function createApp(ssrContext, config = {}) {
       app.context[key] = value
     }
 
+    // Add into store
+    store[key] = app[key]
+
     // Check if plugin not already installed
     const installKey = '__nuxt_' + key + '_installed__'
     if (Vue[installKey]) {
@@ -167,6 +196,13 @@ async function createApp(ssrContext, config = {}) {
   // Inject runtime config as $config
   inject('config', config)
 
+  if (process.client) {
+    // Replace store state before plugins execution
+    if (window.__NUXT__ && window.__NUXT__.state) {
+      store.replaceState(window.__NUXT__.state)
+    }
+  }
+
   // Add enablePreview(previewData = {}) in context for plugins
   if (process.static && process.client) {
     app.context.enablePreview = function (previewData = {}) {
@@ -176,8 +212,28 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_4df65554 === 'function') {
-    await nuxt_plugin_plugin_4df65554(app.context, inject)
+  if (typeof nuxt_plugin_plugin_f6815332 === 'function') {
+    await nuxt_plugin_plugin_f6815332(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_bootstrapvue_46fb95a8 === 'function') {
+    await nuxt_plugin_bootstrapvue_46fb95a8(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_apollomodule_5da7ba6e === 'function') {
+    await nuxt_plugin_apollomodule_5da7ba6e(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_vuescrollto_5ca45b6c === 'function') {
+    await nuxt_plugin_vuescrollto_5ca45b6c(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_axios_56cab806 === 'function') {
+    await nuxt_plugin_axios_56cab806(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_fontawesome_b8db358e === 'function') {
+    await nuxt_plugin_fontawesome_b8db358e(app.context, inject)
   }
 
   // Lock enablePreview in context
@@ -216,6 +272,7 @@ async function createApp(ssrContext, config = {}) {
   })
 
   return {
+    store,
     app,
     router
   }

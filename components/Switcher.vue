@@ -1,3 +1,40 @@
+<script>
+export default {
+    data() {
+        return {
+            isVisible: false
+        }
+    },
+    methods: {
+        ToogleMenu() {
+            this.isVisible = !this.isVisible;
+        },
+        setTheme(theme) {
+            document
+                .getElementById("color-opt")
+                .setAttribute("href", "./css/colors/" + theme + ".css");
+        },
+        setDark() {
+            document.getElementById("theme-opt").setAttribute("href", "./css/style-dark.css");
+        },
+        setLight() {
+            document.getElementById("theme-opt").setAttribute("href", "./css/style.css");
+        },
+        darkRtl() {
+            document.getElementById("theme-opt").setAttribute("href", "./css/style-dark-rtl.css");
+        },
+        darkLtr() {
+            document.getElementById("theme-opt").setAttribute("href", "./css/style-dark.css");
+        },
+        setRtl() {
+            document.getElementById("theme-opt").setAttribute("href", "./css/style-rtl.css");
+        },
+        setLtr() {
+            document.getElementById("theme-opt").setAttribute("href", "./css/style.css");
+        }
+    }
+}
+</script>
 
 <template>
 <!-- Start Style switcher -->
@@ -48,40 +85,3 @@
 </div>
 <!-- End Style switcher -->
 </template>
-<script>
-export default {
-    data() {
-        return {
-            isVisible: false
-        }
-    },
-    methods: {
-        ToogleMenu() {
-            this.isVisible = !this.isVisible;
-        },
-        setTheme(theme) {
-            document
-                .getElementById("color-opt")
-                .setAttribute("href", "./css/colors/" + theme + ".css");
-        },
-        setDark() {
-            document.getElementById("theme-opt").setAttribute("href", "./css/style-dark.css");
-        },
-        setLight() {
-            document.getElementById("theme-opt").setAttribute("href", "./css/style.css");
-        },
-        darkRtl() {
-            document.getElementById("theme-opt").setAttribute("href", "./css/style-dark-rtl.css");
-        },
-        darkLtr() {
-            document.getElementById("theme-opt").setAttribute("href", "./css/style-dark.css");
-        },
-        setRtl() {
-            document.getElementById("theme-opt").setAttribute("href", "./css/style-rtl.css");
-        },
-        setLtr() {
-            document.getElementById("theme-opt").setAttribute("href", "./css/style.css");
-        }
-    }
-}
-</script>

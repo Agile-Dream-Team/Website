@@ -1,8 +1,6 @@
-# adt-website
+# adtWebsite
 
 ## Build Setup
-
-Node V16
 
 ```bash
 # install dependencies

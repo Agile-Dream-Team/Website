@@ -1,3 +1,23 @@
+<script>
+import { Carousel, Slide } from "vue-carousel";
+
+export default {
+  props: {
+    testimonialData: {
+      type: Array,
+      default: [],
+    },
+  },
+  data() {
+    return {};
+  },
+  components: {
+    Carousel,
+    Slide,
+  },
+};
+</script>
+
 <template>
   <carousel id="customer-testi" :per-page="3" dir="ltr" :autoplay="true" :loop="true">
     <Slide v-for="item in testimonialData" :key="item.id">
@@ -37,22 +57,3 @@
     </Slide>
   </carousel>
 </template>
-<script>
-import { Carousel, Slide } from "vue-carousel";
-
-export default {
-  props: {
-    testimonialData: {
-      type: Array,
-      default: [],
-    },
-  },
-  data() {
-    return {};
-  },
-  components: {
-    Carousel,
-    Slide,
-  },
-};
-</script>

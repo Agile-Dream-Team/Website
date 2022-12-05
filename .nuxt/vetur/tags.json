@@ -1,17 +1,17 @@
 {
   "Footer": {
-    "description": "Auto imported from components/Footer.vue"
+    "description": "Auto imported from components/footer.vue"
   },
   "Navbar": {
-    "description": "Auto imported from components/Navbar.vue"
+    "description": "Auto imported from components/navbar.vue"
   },
   "Switcher": {
-    "description": "Auto imported from components/Switcher.vue"
+    "description": "Auto imported from components/switcher.vue"
   },
   "Team": {
-    "description": "Auto imported from components/Team.vue"
+    "description": "Auto imported from components/team.vue"
   },
   "Testimonial": {
-    "description": "Auto imported from components/Testimonial.vue"
+    "description": "Auto imported from components/testimonial.vue"
   }
 }
