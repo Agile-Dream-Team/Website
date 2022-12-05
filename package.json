@@ -4,9 +4,17 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
+    "stagingbuild": "NODE_ENV=staging nuxt generate",
+    "staging": "NODE_ENV=staging nuxt start",
+    "production": "NODE_ENV=production nuxt dev",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "dockbuild": "docker build -t agile_dream_team .",
+    "dockrun": "docker run -it -p 8080:8080 agile_dream_team",
+    "lint:prettier": "prettier --check .",
+    "lint": "npm run lint:prettier",
+    "lintfix": "prettier --write --list-different ."
+
   },
   "dependencies": {
      "@fortawesome/fontawesome-svg-core": "^6.1.1",
