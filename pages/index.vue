@@ -2,7 +2,7 @@
 import { ArrowUpIcon, ArrowRightIcon } from "vue-feather-icons";
 
 import Navbar from "@/components/navbar";
-import Switcher from "@/components/switcher";
+
 import Footer from "@/components/footer";
 import Testimonial from "@/components/testimonial";
 import Team from "@/components/team";
@@ -13,7 +13,7 @@ import Team from "@/components/team";
 export default {
   components: {
     Navbar,
-    Switcher,
+
     Footer,
     ArrowUpIcon,
     ArrowRightIcon,
@@ -748,7 +748,7 @@ export default {
           </div>
           <!--end row-->
         </div>
-        <div class="feature-posts-placeholder bg-secondary"></div>
+        <div class="feature-posts-placeholder bg-light"></div>
       </div>
       <!--end container-->
     </section>
@@ -856,7 +856,7 @@ export default {
 
     <Footer />
     <!-- Footer End -->
-    <Switcher />
+
     <!-- Back to top -->
     <a
       href="javascript: void(0);"
