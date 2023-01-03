@@ -3,13 +3,12 @@ const appEnv = process.env.NODE_ENV || "development";
 import axios from "axios";
 
 let dynamicRoutes = () => {
-  const routes = axios
-    .get
-    // "https://jamstack.offilawyer.com//wp-json/wp/v2/posts?page=1&per_page=20"
-    ()
-    .then((res) => {
-      // return res.data.map((post) => `/blog/${post.slug}`);
-    });
+  const routes = axios.get;
+  "https://jamstack.offilawyer.com//wp-json/wp/v2/posts?page=1&per_page=20"().then(
+    (res) => {
+      return res.data.map((post) => `/blog/${post.slug}`);
+    }
+  );
   // console.log(routes);
   return routes;
 };
@@ -43,7 +42,7 @@ export default {
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -95,7 +94,7 @@ export default {
   content: {},
 
   generate: {
-    routes: dynamicRoutes,
+    // routes: dynamicRoutes,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

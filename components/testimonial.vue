@@ -23,7 +23,7 @@ export default {
     <Slide v-for="item in testimonialData" :key="item.id">
       <div class="media customer-testi m-2">
         <img
-          :src="`${item.profile}`"
+        src="../assets/images/02.jpg"
           class="avatar avatar-small mr-3 rounded shadow"
           alt=""
         />
