@@ -239,13 +239,13 @@ export default {
               <div class="t-div-color">
                 <p class="title-div-color">Building tech projects on time</p>
                 <p class="texto-div-color">
-                  We deliver you the
-                  <span class="text-primary">perfect team</span> and combination
+                  We deliver you the &nbsp;
+                  <span class="text-primary"> perfect team </span> &nbsp; and combination
                   of skill sets
                 </p>
                 <p class="texto-div-color">
-                  to complete your next
-                  <span class="text-primary">complex</span> tech build
+                  to complete your next &nbsp;
+                  <span class="text-primary"> complex </span> tech build
                 </p>
               </div>
             </div>
@@ -373,7 +373,7 @@ export default {
           <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
             <div class="section-title ml-lg-5">
               <p class="style-Agile">
-                Why hire an <span class="text-primary">Agile Dream Team?</span>
+                Why hire an <span class="text-primary"> Agile Dream Team? </span>
               </p>
               <p class="style-Agile-text">
                 We deliver the highest quality solutions On-Time and On-Budget
@@ -398,15 +398,15 @@ export default {
         <div class="container">
           <div class="div-img-con">
             <div class="t-div-color-cen">
-              <div class="t-div-color">
+              <div class="t-div-color-2">
                 <p class="title-div-color">Trusted by</p>
                 <p class="texto-div-color">
-                  We help <span class="text-primary">everyone</span> innovate
+                  We help &nbsp;<span class="text-primary">everyone</span>&nbsp; innovate
                   and succeed
                 </p>
                 <p class="texto-div-color">
-                  with high-quality
-                  <span class="text-primary">software</span> development
+                  with high-quality &nbsp;
+                  <span class="text-primary">software</span>&nbsp; development
                 </p>
               </div>
             </div>
