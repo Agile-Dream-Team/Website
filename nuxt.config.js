@@ -98,7 +98,7 @@ export default {
   content: {},
 
   generate: {
-    // routes: dynamicRoutes,
+    fallback: true
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
