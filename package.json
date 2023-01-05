@@ -13,8 +13,7 @@
     "dockrun": "docker run -it -p 8080:8080 agile_dream_team",
     "lint:prettier": "prettier --check .",
     "lint": "npm run lint:prettier",
-    "lintfix": "prettier --write --list-different .",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "lintfix": "prettier --write --list-different ."
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
