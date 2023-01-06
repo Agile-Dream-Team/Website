@@ -29,7 +29,12 @@ export default {
 
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
+  // Content module configuration: https://go.nuxtjs.dev/config-content
+  content: {},
 
+  generate: {
+    fallback: true,
+  },
   /*  router : {
     base: '/agiledreamteam/'
   },
@@ -94,12 +99,7 @@ export default {
     },
   },
 
-  // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
 
-  generate: {
-    fallback: true,
-  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

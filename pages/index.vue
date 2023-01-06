@@ -132,12 +132,12 @@ export default {
     <section class="section" id="why">
       <div class="container">
         <p class="style-Team">
-          Advantages of hiring an &nbsp;
+          Advantages of hiring an
           <span class="text-primary">Agile Dream Team</span> ?
         </p>
         <div class="row">
           <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0 position-style">
-            <div class="card features fea-primary bg-white rounded p-4 position-relative overflow-hidden border-0">
+            <div class="card features fea-primary bg-white p-4 position-relative overflow-hidden border-0">
               <span class="h1 icon2 text-primary">
                 <i class="uil uil-newspaper"></i>
               </span>
@@ -154,7 +154,7 @@ export default {
           <!--end col-->
 
           <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0 position-style">
-            <div class="card features fea-primary bg-white rounded p-4 position-relative overflow-hidden border-0">
+            <div class="card features fea-primary bg-white  p-4 position-relative overflow-hidden border-0">
               <span class="h1 icon2 text-primary">
                 <i class="uil uil-newspaper"></i>
               </span>
@@ -171,7 +171,7 @@ export default {
           <!--end col-->
 
           <div class="col-lg-3 col-md-6 col-12 mt-4 mt-lg-0 pt-2 pt-lg-0 position-style">
-            <div class="card features fea-primary bg-white rounded p-4 position-relative overflow-hidden border-0">
+            <div class="card features fea-primary bg-white p-4 position-relative overflow-hidden border-0">
               <span class="h1 icon2 text-primary">
                 <i class="uil uil-newspaper"></i>
               </span>
@@ -185,7 +185,7 @@ export default {
           <!--end col-->
 
           <div class="col-lg-3 col-md-6 col-12 mt-4 mt-lg-0 pt-2 pt-lg-0 position-style">
-            <div class="card features fea-primary bg-white rounded p-4 position-relative overflow-hidden border-0">
+            <div class="card features fea-primary bg-white p-4 position-relative overflow-hidden border-0">
               <span class="h1 icon2 text-primary">
                 <i class="uil uil-newspaper"></i>
               </span>
@@ -203,7 +203,7 @@ export default {
         <!--end row-->
         <div class="mt-3 style-Schedule">
           <NuxtLink to="/contactUs">
-            <a class="btn btn-primary btn-call-p mr-5 mt-2" onclick="">contact us</a>
+            <a class="btn btn-primary btn-call-p mr-5 mt-2" onclick="" href="">contact us</a>
           </NuxtLink>
         </div>
       </div>
@@ -230,7 +230,7 @@ export default {
               </div>
             </div>
 
-            <div class="row" style="
+            <div class="row " style="
                 padding-top: 6rem !important;
                 padding-bottom: 6rem !important;
               ">
@@ -247,9 +247,6 @@ export default {
                       </p>
                       <p class="style-experience-2 mb-0">Development</p>
                     </div>
-                    <!--    <div class="style-ipsum">
-                      <a class="style-experience mb-0">Lorem Ipsum</a>
-                    </div> -->
                   </div>
                 </div>
               </div>
@@ -259,17 +256,14 @@ export default {
                   class="card border-card features fea-primary bg-white rounded p-4 position-relative overflow-hidden border-0">
                   <div class="card-body p-0 content">
                     <div class="img-experience-A">
-                      <img src="../assets/images/psychology.png" class="" alt="" />
+                      <img src="../assets/images/psychology.png" class="" alt="psychology" />
                     </div>
                     <div class="center-div-p">
-                      <p class="mb-0 style-experience-1">
+                      <p class="style-experience-1">
                         Artificial Intelligenceand
                       </p>
-                      <p class="style-experience-2 mb-0">Machine Learning</p>
+                      <p class="style-experience-2">Machine Learning</p>
                     </div>
-                    <!--          <div class="style-ipsum">
-                      <a class="style-experience mb-0">Lorem Ipsum</a>
-                    </div> -->
                   </div>
                 </div>
               </div>
@@ -285,9 +279,6 @@ export default {
                     <div class="center-div-p">
                       <p class="mb-0 style-experience-1">Cloud Computing</p>
                     </div>
-                    <!--      <div class="style-ipsum">
-                      <a class="style-experience-a mb-0">Lorem Ipsum</a>
-                    </div> -->
                   </div>
                 </div>
               </div>
@@ -550,7 +541,7 @@ export default {
 
                       <a class="nav-item mt-2">
                         <div class="li-p-style">
-                          <a class="nav-link text-box-style-4" data-toggle="pill" role="tab">
+                          <a class="nav-link text-box-style-4" data-toggle="pill" role="tab" href="">
                             <div class="text-center py-1">
                               <p class="mb-0">Agility Assessment</p>
                             </div>
@@ -559,7 +550,7 @@ export default {
                       </a>
                       <a class="nav-item mt-2">
                         <div class="li-p-style">
-                          <a class="nav-link text-box-style-4" data-toggle="pill" role="tab">
+                          <a class="nav-link text-box-style-4" data-toggle="pill" role="tab" href="">
                             <div class="text-center py-1">
                               <p class="mb-0">Technical Assessment</p>
                             </div>

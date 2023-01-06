@@ -1629,7 +1629,7 @@ button:not(:disabled) {
 }
 
 @media (max-width: 425px) {
-  .rep-img-1{
+  .rep-img-1 {
     padding: 63px 0px 37px 0px;
   }
 }
@@ -1658,13 +1658,12 @@ button:not(:disabled) {
 }
 
 @media (max-width: 425px) {
-  .p-img-4  {
+  .p-img-4 {
     padding-top: 30px;
     padding-bottom: 20%;
     width: 48%;
   }
 }
-
 
 .t-div-color-cen {
   justify-content: center;
@@ -2166,27 +2165,26 @@ button:not(:disabled) {
   border-color: #2f55d4;
 }
 
-.form-text-color{
-  font-family: 'ABeeZee';
-font-weight: 400;
-font-size: 24px !important;
-line-height: 28px;
-color: #FFFFFF;
-padding: 11px 0px 19px 0px;
+.form-text-color {
+  font-family: "ABeeZee";
+  font-weight: 400;
+  font-size: 24px !important;
+  line-height: 28px;
+  color: #ffffff;
+  padding: 11px 0px 19px 0px;
 }
 
-
-.form-control{
-  color: #9580FF !important;
+.form-control {
+  color: #9580ff !important;
 }
 
-.form-text-color-1{
-  font-family: 'ABeeZee';
-font-weight: 400;
-font-size: 20px !important;
-line-height: 28px;
-color: #FFFFFF;
-padding-left: 10px;
+.form-text-color-1 {
+  font-family: "ABeeZee";
+  font-weight: 400;
+  font-size: 20px !important;
+  line-height: 28px;
+  color: #ffffff;
+  padding-left: 10px;
 }
 
 .style-Schedule-2 {
@@ -2670,7 +2668,7 @@ section {
 }
 
 .color-input {
-  color: #9580FF !important;
+  color: #9580ff !important;
   background-color: transparent !important;
   border: 1px solid #9580ff !important;
   border-radius: 8px !important;
@@ -6182,11 +6180,9 @@ section {
 }
 
 .bg-white-get {
-  background-color: #D9D9D9 !important;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
-border-radius: 5px 40px 40px 40px !important;
-
-;
+  background-color: #d9d9d9 !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+  border-radius: 5px 40px 40px 40px !important;
 }
 
 .text-white {
@@ -6495,18 +6491,18 @@ a.text-muted:focus {
   padding-top: 0rem;
 }
 
-.building-div-center{
+.building-div-center {
   display: flex;
   justify-content: center;
 }
 
-.building-contact-vision{
-  font-family: 'ABeeZee';
+.building-contact-vision {
+  font-family: "ABeeZee";
   font-weight: 400;
   font-size: 64px;
   line-height: 76px;
   position: absolute;
-  color: #9580FF;
+  color: #9580ff;
   margin-top: 13rem;
 }
 
@@ -6532,7 +6528,7 @@ a.text-muted:focus {
   background: transparent;
   height: 183px;
   filter: blur(10px);
-  border: 5px solid #9580FF;
+  border: 5px solid #9580ff;
   border-radius: 10px;
   /* margin-left: 5rem; */
   margin-top: 10rem;
@@ -7877,102 +7873,100 @@ button:not(:disabled) {
   padding-right: 5rem;
 }
 
-.container-mission{
+.container-mission {
   background-color: rgba(149, 128, 255, 0.1);
 }
 
-.p-mission{
+.p-mission {
   justify-content: center;
   display: flex;
-
 }
 
-.con-get-team-color{
-    top: 1806px;
-    border: 2px solid #9580FF;
-    filter: blur(7.5px);
+.con-get-team-color {
+  top: 1806px;
+  border: 2px solid #9580ff;
+  filter: blur(7.5px);
 }
 
-.con-get-team-color-1{
+.con-get-team-color-1 {
   position: absolute;
   width: 105px;
   height: 0px;
-  border: 5px solid #9580FF;
+  border: 5px solid #9580ff;
   filter: blur(7.5px);
   transform: rotate(90deg);
 }
 
-.con-get-team-color-2{
+.con-get-team-color-2 {
   position: absolute;
   width: 133px;
   height: 0px;
   left: 40rem;
-  border: 5px solid #9580FF;
+  border: 5px solid #9580ff;
   filter: blur(7.5px);
   transform: rotate(90deg);
 }
 
-.con-get-team-color-3{
+.con-get-team-color-3 {
   width: 182px;
   height: 0px;
-  border: 5px solid #9580FF;
+  border: 5px solid #9580ff;
   filter: blur(7.5px);
   transform: rotate(90deg);
 }
 
-.con-get-team{
+.con-get-team {
   padding: 0px 88px 0px 94px;
 }
 
-.con-get-team-2{
+.con-get-team-2 {
   padding: 69px 0px 37px 0px;
 }
 
-.line-color-1{
+.line-color-1 {
   padding: 0px 0px 41px 0px;
 }
 
-.line-color-2{
+.line-color-2 {
   padding-bottom: 1rem;
   padding-left: 65rem;
-
 }
 
-.img-get{
+.img-get {
   padding-bottom: 2rem;
 }
 
-.line-color-3{
+.line-color-3 {
   padding-bottom: 1rem;
 }
 
-.building-contact-game{
-  font-family: 'ABeeZee';
+.building-contact-game {
+  font-family: "ABeeZee";
   position: absolute;
   font-weight: 400;
   font-size: 48px;
   line-height: 57px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 14rem;
 }
 
-.game-center{
+.game-center {
   justify-content: center;
   display: flex;
   padding: 0px 0px 166px 0px;
 }
 
-.btn-game{
-  background: linear-gradient(270deg, #9580FF 36.61%, #80DAFF 125.61%);
+.btn-game {
+  background: linear-gradient(270deg, #9580ff 36.61%, #80daff 125.61%);
   border-radius: 5px 40px 40px 40px;
   font-size: 20px;
   line-height: 24px;
   padding: 22px 60px 22px 60px;
-  font-family: 'ABeeZee';
+  font-family: "ABeeZee";
   font-weight: 400;
 }
 
-.style-body-get-com{
+.style-body-get-com {
   font-family: "ABeeZee";
   font-weight: 400;
   font-size: 24px;
@@ -7981,16 +7975,16 @@ button:not(:disabled) {
   padding: 0px 0px 48px 0px;
 }
 
-.style-body-get{
-    font-family: "ABeeZee";
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    color: #6A6868;
-    padding: 0px 0px 30px 0px;
+.style-body-get {
+  font-family: "ABeeZee";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #6a6868;
+  padding: 0px 0px 30px 0px;
 }
 
-.style-Launch-get{
+.style-Launch-get {
   font-family: "ABeeZee";
   font-weight: 400;
   font-size: 24px;
@@ -7999,50 +7993,48 @@ button:not(:disabled) {
   padding: 6px 0px 12px 0px;
 }
 
-.line-color-4{
+.line-color-4 {
   padding-right: 48rem;
 }
 
-.p-get-team{
-  font-family: 'ABeeZee';
+.p-get-team {
+  font-family: "ABeeZee";
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   padding: 0px 0px 81px 0px;
-  color: #FFFFFF;
-
+  color: #ffffff;
 }
 
-.t-get-team{
-  font-family: 'ABeeZee';
+.t-get-team {
+  font-family: "ABeeZee";
   font-weight: 400;
   font-size: 56px;
   line-height: 48px;
   text-align: center;
-  color: #9580FF;
+  color: #9580ff;
 }
 
-.container-mission-p{
-  font-family: 'ABeeZee';
+.container-mission-p {
+  font-family: "ABeeZee";
   font-style: normal;
   font-weight: 400;
   font-size: 64px;
   line-height: 76px;
   padding: 50px 0px 15px 0px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.container-mission-c{
-  font-family: 'ABeeZee';
+.container-mission-c {
+  font-family: "ABeeZee";
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 47rem;
   padding: 0px 0px 238px 0px;
-
 }
 
 .nav-pills {
@@ -8052,13 +8044,13 @@ button:not(:disabled) {
   border-radius: 10px;
 }
 
-.container-vision{
-    font-family: 'ABeeZee';
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    color: #FFFFFF;
+.container-vision {
+  font-family: "ABeeZee";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .building-div {
