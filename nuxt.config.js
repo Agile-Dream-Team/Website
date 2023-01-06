@@ -30,7 +30,7 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
 
- /*  router : {
+  /*  router : {
     base: '/agiledreamteam/'
   },
  */
@@ -43,8 +43,8 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
-      { name: "format-detection", content: "telephone=no" },
+      { hid: "description", name: "description", content: "Agile Dream Team description" },
+    /*   { name: "format-detection", content: "telephone=no" }, */
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }],
   },
@@ -98,7 +98,7 @@ export default {
   content: {},
 
   generate: {
-    fallback: true
+    fallback: true,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

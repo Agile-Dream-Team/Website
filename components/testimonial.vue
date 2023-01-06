@@ -22,14 +22,8 @@ export default {
   <carousel id="customer-testi" :per-page="3" dir="ltr" :autoplay="true" :loop="true">
     <Slide v-for="item in testimonialData" :key="item.id">
       <div class="media customer-testi m-2">
-        <img
-        src="../assets/images/02.jpg"
-          class="avatar avatar-small mr-3 rounded shadow"
-          alt=""
-        />
-        <div
-          class="media-body content p-3 shadow rounded bg-white position-relative"
-        >
+        <img src="../assets/images/02.jpg" class="avatar avatar-small mr-3 rounded shadow" alt="" />
+        <div class="media-body content p-3 shadow rounded bg-white position-relative">
           <ul class="list-unstyled mb-0">
             <li class="list-inline-item">
               <i class="mdi mdi-star text-warning"></i>

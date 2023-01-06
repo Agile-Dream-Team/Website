@@ -18,78 +18,6 @@ export default {
   },
   data() {
     return {
-      testimonialData: [
-        {
-          id: 1,
-          profile: "images/client/01.jpg",
-          message:
-            "It seems that only fragments of the original text remain in the Lorem Ipsum texts used today.",
-          name: "Thomas Israel",
-          designation: "C.E.O",
-        },
-        {
-          id: 2,
-          profile: "images/client/02.jpg",
-          message:
-            "One disadvantage of Lorum Ipsum is that in Latin certain letters appear more frequently than others.",
-          name: "Barbara McIntosh",
-          designation: "M.D",
-        },
-        {
-          id: 3,
-          profile: "images/client/03.jpg",
-          message:
-            "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century.",
-          name: "Carl Oliver",
-          designation: "P.A",
-        },
-        {
-          id: 4,
-          profile: "images/client/04.jpg",
-          message:
-            "According to most sources, Lorum Ipsum can be traced back to a text composed by Cicero.",
-          name: "Christa Smith",
-          designation: "Manager",
-        },
-        {
-          id: 5,
-          profile: "images/client/05.jpg",
-          message:
-            "There is now an abundance of readable dummy texts. These are usually used when a text is required.",
-          name: "Dean Tolle",
-          designation: "Developer",
-        },
-        {
-          id: 6,
-          profile: "images/client/05.jpg",
-          message:
-            "Thus, Lorem Ipsum has only limited suitability as a visual filler for German texts.",
-          name: "Jill Webb",
-          designation: "Designer",
-        },
-      ],
-      teamData: [
-        {
-          image: "images/medical/01.jpg",
-          name: "Ronny Jofra",
-          designation: "Cardiologist",
-        },
-        {
-          image: "images/medical/04.jpg",
-          name: "Micheal Carlo",
-          designation: "Surgeon",
-        },
-        {
-          image: "images/medical/02.jpg",
-          name: "Aliana Rosy",
-          designation: "Physician",
-        },
-        {
-          image: "images/medical/03.jpg",
-          name: "Sofia Razaq",
-          designation: "Chemist",
-        },
-      ],
       phoneNumber: null,
       results: null,
       terminos: false
@@ -146,40 +74,38 @@ export default {
     </section>
     <section>
       <div class="con-get-team-2">
-          <p class="t-get-team">GET A WORLD-CLASS TEAM</p>
-          <p class="t-get-team">HAND-PICKED JUST FOR YOU</p>
-        </div>
+        <p class="t-get-team">GET A WORLD-CLASS TEAM</p>
+        <p class="t-get-team">HAND-PICKED JUST FOR YOU</p>
+      </div>
       <div class="container con-get-team">
         <div class="con-get-team">
-          <p class="p-get-team">We deliver projects, not bodies. A typical <span class="text-primary"> Agile Dream Team </span> consists of all the key stakeholders needed for
-            your application <span class="text-primary"> development </span> team, e.g. a PM, 2 developers, QA, and UI/UX
+          <p class="p-get-team">We deliver projects, not bodies. A typical <span class="text-primary"> Agile Dream Team
+            </span> consists of all the key stakeholders needed for
+            your application <span class="text-primary"> development </span> team, e.g. a PM, 2 developers, QA, and
+            UI/UX
           </p>
         </div>
       </div>
       <div class="line-color-1">
         <div class="container con-get-team-color">
-      </div>
+        </div>
       </div>
       <div class="line-color-2">
-      <div class="container con-get-team-color-1">
+        <div class="container con-get-team-color-1">
+        </div>
       </div>
-    </div>
-    <div class="line-color-3">
-      <div class="container con-get-team-color-2">
+      <div class="line-color-3">
+        <div class="container con-get-team-color-2">
+        </div>
       </div>
-    </div>
-    <div class="line-color-4">
-      <div class="container con-get-team-color-3">
+      <div class="line-color-4">
+        <div class="container con-get-team-color-3">
+        </div>
       </div>
-    </div>
       <div class="container">
         <div class="row">
-          <div
-            class="col-lg-4 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0 position-style"
-          >
-            <div
-              class="card features fea-primary bg-white-get rounded p-4 position-relative overflow-hidden border-0"
-            >
+          <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0 position-style">
+            <div class="card features fea-primary bg-white-get rounded p-4 position-relative overflow-hidden border-0">
               <span class="h1 icon2 text-primary">
                 <i class="uil uil-newspaper"></i>
               </span>
@@ -193,12 +119,8 @@ export default {
               </div>
             </div>
           </div>
-          <div
-            class="col-lg-4 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0 position-style"
-          >
-            <div
-              class="card features fea-primary bg-white-get rounded p-4 position-relative overflow-hidden border-0"
-            >
+          <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0 position-style">
+            <div class="card features fea-primary bg-white-get rounded p-4 position-relative overflow-hidden border-0">
               <span class="h1 icon2 text-primary">
                 <i class="uil uil-newspaper"></i>
               </span>
@@ -212,12 +134,8 @@ export default {
               </div>
             </div>
           </div>
-          <div
-            class="col-lg-4 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0 position-style"
-          >
-            <div
-              class="card features fea-primary bg-white-get rounded p-4 position-relative overflow-hidden border-0"
-            >
+          <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0 position-style">
+            <div class="card features fea-primary bg-white-get rounded p-4 position-relative overflow-hidden border-0">
               <span class="h1 icon2 text-primary">
                 <i class="uil uil-newspaper"></i>
               </span>
@@ -240,19 +158,15 @@ export default {
     <section>
       <div class="container">
         <div class="building-div-center">
-            <div class="building-div">
-              <p class="building-contact-game">Let’s change the <span class="text-primary"> game </span> together</p>
-            </div>
+          <div class="building-div">
+            <p class="building-contact-game">Let’s change the <span class="text-primary"> game </span> together</p>
           </div>
-          <div class="con-changes-contact-vision">
-          </div>
-          <div class="mt-3 game-center">
-                <a
-                  href="javascript:void(0)"
-                  class="btn btn-primary btn-game mr-5 mt-2"
-                  >Contact us</a
-                >
-              </div>
+        </div>
+        <div class="con-changes-contact-vision">
+        </div>
+        <div class="mt-3 game-center">
+          <a href="javascript:void(0)" class="btn btn-primary btn-game mr-5 mt-2">Contact us</a>
+        </div>
       </div>
     </section>
     <section class="section-contact">

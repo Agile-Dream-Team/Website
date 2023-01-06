@@ -20,80 +20,80 @@ export default {
   },
   data() {
     return {
-      testimonialData: [
-        {
-          id: 1,
-          profile: "images/client/01.jpg",
-          message:
-            "It seems that only fragments of the original text remain in the Lorem Ipsum texts used today.",
-          name: "Thomas Israel",
-          designation: "C.E.O",
-        },
-        {
-          id: 2,
-          profile: "images/client/02.jpg",
-          message:
-            "One disadvantage of Lorum Ipsum is that in Latin certain letters appear more frequently than others.",
-          name: "Barbara McIntosh",
-          designation: "M.D",
-        },
-        {
-          id: 3,
-          profile: "images/client/03.jpg",
-          message:
-            "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century.",
-          name: "Carl Oliver",
-          designation: "P.A",
-        },
-        {
-          id: 4,
-          profile: "images/client/04.jpg",
-          message:
-            "According to most sources, Lorum Ipsum can be traced back to a text composed by Cicero.",
-          name: "Christa Smith",
-          designation: "Manager",
-        },
-        {
-          id: 5,
-          profile: "images/client/05.jpg",
-          message:
-            "There is now an abundance of readable dummy texts. These are usually used when a text is required.",
-          name: "Dean Tolle",
-          designation: "Developer",
-        },
-        {
-          id: 6,
-          profile: "images/client/05.jpg",
-          message:
-            "Thus, Lorem Ipsum has only limited suitability as a visual filler for German texts.",
-          name: "Jill Webb",
-          designation: "Designer",
-        },
-      ],
-      teamData: [
-        {
-          image: "images/medical/01.jpg",
-          name: "Ronny Jofra",
-          designation: "Cardiologist",
-        },
-        {
-          image: "images/medical/04.jpg",
-          name: "Micheal Carlo",
-          designation: "Surgeon",
-        },
-        {
-          image: "images/medical/02.jpg",
-          name: "Aliana Rosy",
-          designation: "Physician",
-        },
-        {
-          image: "images/medical/03.jpg",
-          name: "Sofia Razaq",
-          designation: "Chemist",
-        },
-      ],
+      /*      testimonialData: [
+             {
+               id: 1,
+               profile: "images/client/01.jpg",
+               message:
+                 "It seems that only fragments of the original text remain in the Lorem Ipsum texts used today.",
+               name: "Thomas Israel",
+               designation: "C.E.O",
+             },
+             {
+               id: 2,
+               profile: "images/client/02.jpg",
+               message:
+                 "One disadvantage of Lorum Ipsum is that in Latin certain letters appear more frequently than others.",
+               name: "Barbara McIntosh",
+               designation: "M.D",
+             },
+             {
+               id: 3,
+               profile: "images/client/03.jpg",
+               message:
+                 "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century.",
+               name: "Carl Oliver",
+               designation: "P.A",
+             },
+             {
+               id: 4,
+               profile: "images/client/04.jpg",
+               message:
+                 "According to most sources, Lorum Ipsum can be traced back to a text composed by Cicero.",
+               name: "Christa Smith",
+               designation: "Manager",
+             },
+             {
+               id: 5,
+               profile: "images/client/05.jpg",
+               message:
+                 "There is now an abundance of readable dummy texts. These are usually used when a text is required.",
+               name: "Dean Tolle",
+               designation: "Developer",
+             },
+             {
+               id: 6,
+               profile: "images/client/05.jpg",
+               message:
+                 "Thus, Lorem Ipsum has only limited suitability as a visual filler for German texts.",
+               name: "Jill Webb",
+               designation: "Designer",
+             },
+           ],
+           teamData: [
+             {
+               image: "images/medical/01.jpg",
+               name: "Ronny Jofra",
+               designation: "Cardiologist",
+             },
+             {
+               image: "images/medical/04.jpg",
+               name: "Micheal Carlo",
+               designation: "Surgeon",
+             },
+             {
+               image: "images/medical/02.jpg",
+               name: "Aliana Rosy",
+               designation: "Physician",
+             },
+             {
+               image: "images/medical/03.jpg",
+               name: "Sofia Razaq",
+               designation: "Chemist",
+             },
+           ], */
     };
-  },
+  }
 };
 </script>
 
@@ -118,11 +118,7 @@ export default {
               </p>
 
               <div class="mt-3">
-                <a
-                  href="javascript:void(0)"
-                  class="btn btn-primary btn-team mr-5 mt-2"
-                  >Find a team</a
-                >
+                <a href="javascript:void(0)" class="btn btn-primary btn-team mr-5 mt-2">Find a team</a>
               </div>
             </div>
           </div>
@@ -140,12 +136,8 @@ export default {
           <span class="text-primary">Agile Dream Team</span> ?
         </p>
         <div class="row">
-          <div
-            class="col-lg-3 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0 position-style"
-          >
-            <div
-              class="card features fea-primary bg-white rounded p-4 position-relative overflow-hidden border-0"
-            >
+          <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0 position-style">
+            <div class="card features fea-primary bg-white rounded p-4 position-relative overflow-hidden border-0">
               <span class="h1 icon2 text-primary">
                 <i class="uil uil-newspaper"></i>
               </span>
@@ -161,12 +153,8 @@ export default {
           </div>
           <!--end col-->
 
-          <div
-            class="col-lg-3 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0 position-style"
-          >
-            <div
-              class="card features fea-primary bg-white rounded p-4 position-relative overflow-hidden border-0"
-            >
+          <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0 position-style">
+            <div class="card features fea-primary bg-white rounded p-4 position-relative overflow-hidden border-0">
               <span class="h1 icon2 text-primary">
                 <i class="uil uil-newspaper"></i>
               </span>
@@ -182,12 +170,8 @@ export default {
           </div>
           <!--end col-->
 
-          <div
-            class="col-lg-3 col-md-6 col-12 mt-4 mt-lg-0 pt-2 pt-lg-0 position-style"
-          >
-            <div
-              class="card features fea-primary bg-white rounded p-4 position-relative overflow-hidden border-0"
-            >
+          <div class="col-lg-3 col-md-6 col-12 mt-4 mt-lg-0 pt-2 pt-lg-0 position-style">
+            <div class="card features fea-primary bg-white rounded p-4 position-relative overflow-hidden border-0">
               <span class="h1 icon2 text-primary">
                 <i class="uil uil-newspaper"></i>
               </span>
@@ -200,12 +184,8 @@ export default {
           </div>
           <!--end col-->
 
-          <div
-            class="col-lg-3 col-md-6 col-12 mt-4 mt-lg-0 pt-2 pt-lg-0 position-style"
-          >
-            <div
-              class="card features fea-primary bg-white rounded p-4 position-relative overflow-hidden border-0"
-            >
+          <div class="col-lg-3 col-md-6 col-12 mt-4 mt-lg-0 pt-2 pt-lg-0 position-style">
+            <div class="card features fea-primary bg-white rounded p-4 position-relative overflow-hidden border-0">
               <span class="h1 icon2 text-primary">
                 <i class="uil uil-newspaper"></i>
               </span>
@@ -223,8 +203,8 @@ export default {
         <!--end row-->
         <div class="mt-3 style-Schedule">
           <NuxtLink to="/contactUs">
-            <a class="btn btn-primary btn-call-p mr-5 mt-2" onclick="" >contact us</a>
-    </NuxtLink>
+            <a class="btn btn-primary btn-call-p mr-5 mt-2" onclick="">contact us</a>
+          </NuxtLink>
         </div>
       </div>
       <!--end container-->
@@ -250,19 +230,13 @@ export default {
               </div>
             </div>
 
-            <div
-              class="row"
-              style="
+            <div class="row" style="
                 padding-top: 6rem !important;
                 padding-bottom: 6rem !important;
-              "
-            >
-              <div
-                class="col-lg-3 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0 position-style"
-              >
+              ">
+              <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0 position-style">
                 <div
-                  class="card border-card features fea-primary bg-white rounded p-4 position-relative overflow-hidden border-0"
-                >
+                  class="card border-card features fea-primary bg-white rounded p-4 position-relative overflow-hidden border-0">
                   <div class="card-body p-0 content">
                     <div class="img-experience-A">
                       <img src="../assets/images/lan.png" class="" alt="" />
@@ -273,26 +247,19 @@ export default {
                       </p>
                       <p class="style-experience-2 mb-0">Development</p>
                     </div>
-                 <!--    <div class="style-ipsum">
+                    <!--    <div class="style-ipsum">
                       <a class="style-experience mb-0">Lorem Ipsum</a>
                     </div> -->
                   </div>
                 </div>
               </div>
               <!--end col-->
-              <div
-                class="col-lg-3 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0 position-style"
-              >
+              <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0 position-style">
                 <div
-                  class="card border-card features fea-primary bg-white rounded p-4 position-relative overflow-hidden border-0"
-                >
+                  class="card border-card features fea-primary bg-white rounded p-4 position-relative overflow-hidden border-0">
                   <div class="card-body p-0 content">
                     <div class="img-experience-A">
-                      <img
-                        src="../assets/images/psychology.png"
-                        class=""
-                        alt=""
-                      />
+                      <img src="../assets/images/psychology.png" class="" alt="" />
                     </div>
                     <div class="center-div-p">
                       <p class="mb-0 style-experience-1">
@@ -300,7 +267,7 @@ export default {
                       </p>
                       <p class="style-experience-2 mb-0">Machine Learning</p>
                     </div>
-           <!--          <div class="style-ipsum">
+                    <!--          <div class="style-ipsum">
                       <a class="style-experience mb-0">Lorem Ipsum</a>
                     </div> -->
                   </div>
@@ -308,12 +275,9 @@ export default {
               </div>
               <!--end col-->
 
-              <div
-                class="col-lg-3 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0 position-style"
-              >
+              <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0 position-style">
                 <div
-                  class="card border-card features fea-primary bg-white rounded p-4 position-relative overflow-hidden border-0"
-                >
+                  class="card border-card features fea-primary bg-white rounded p-4 position-relative overflow-hidden border-0">
                   <div class="card-body p-0 content">
                     <div class="img-experience-A">
                       <img src="../assets/images/drama.png" class="" alt="" />
@@ -321,32 +285,25 @@ export default {
                     <div class="center-div-p">
                       <p class="mb-0 style-experience-1">Cloud Computing</p>
                     </div>
-               <!--      <div class="style-ipsum">
+                    <!--      <div class="style-ipsum">
                       <a class="style-experience-a mb-0">Lorem Ipsum</a>
                     </div> -->
                   </div>
                 </div>
               </div>
               <!--end col-->
-              <div
-                class="col-lg-3 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0 position-style"
-              >
+              <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0 position-style">
                 <div
-                  class="card border-card features fea-primary bg-white rounded p-4 position-relative overflow-hidden border-0"
-                >
+                  class="card border-card features fea-primary bg-white rounded p-4 position-relative overflow-hidden border-0">
                   <div class="card-body p-0 content">
                     <div class="img-experience-A">
-                      <img
-                        src="../assets/images/dashboard.png"
-                        class=""
-                        alt=""
-                      />
+                      <img src="../assets/images/dashboard.png" class="" alt="" />
                     </div>
                     <div class="center-div-p">
                       <p class="mb-0 style-experience-1">Custom Enterprise</p>
                       <p class="style-experience-2 mb-0">Development</p>
                     </div>
-                   <!--  <div class="style-ipsum">
+                    <!--  <div class="style-ipsum">
                       <a class="style-experience mb-0">Lorem Ipsum</a>
                     </div> -->
                   </div>
@@ -361,11 +318,7 @@ export default {
         <div class="row align-items-center">
           <div class="col-lg-5 col-md-6">
             <div class="position-relative">
-              <img
-                src="../assets/images/office.png"
-                class="rounded img-fluid mx-auto d-block shadow rounded"
-                alt=""
-              />
+              <img src="../assets/images/office.png" class="rounded img-fluid mx-auto d-block shadow rounded" alt="" />
             </div>
           </div>
           <!--end col-->
@@ -413,49 +366,32 @@ export default {
             <div class="row img-center-div">
               <div class="col-md-4">
                 <div class="position-relative">
-                  <img
-                    src="../assets/images/repfabric.png"
-                    class="rep-img-1 rounded img-fluid mx-auto d-block"
-                    alt=""
-                  />
+                  <img src="../assets/images/repfabric.png" class="rep-img-1 rounded img-fluid mx-auto d-block"
+                    alt="" />
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="position-relative">
-                  <img
-                    src="../assets/images/Avanto.png"
-                    class="avan-div-img rounded img-fluid mx-auto d-block"
-                    alt=""
-                  />
+                  <img src="../assets/images/Avanto.png" class="avan-div-img rounded img-fluid mx-auto d-block"
+                    alt="" />
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="position-relative">
-                  <img
-                    src="../assets/images/franktemple.png"
-                    class="logo-img-div rounded img-fluid mx-auto d-block"
-                    alt=""
-                  />
+                  <img src="../assets/images/franktemple.png" class="logo-img-div rounded img-fluid mx-auto d-block"
+                    alt="" />
                 </div>
               </div>
             </div>
             <div class="row img-center-div-2">
               <div class="col-md-6">
                 <div class="position-relative">
-                  <img
-                    src="../assets/images/oky.png"
-                    class="p-img-4 img-fluid mx-auto d-block"
-                    alt=""
-                  />
+                  <img src="../assets/images/oky.png" class="p-img-4 img-fluid mx-auto d-block" alt="" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="position-relative">
-                  <img
-                    src="../assets/images/debtcom.png"
-                    class="rounded img-fluid mx-auto d-block"
-                    alt=""
-                  />
+                  <img src="../assets/images/debtcom.png" class="rounded img-fluid mx-auto d-block" alt="" />
                 </div>
               </div>
             </div>
@@ -474,47 +410,29 @@ export default {
               <p class="style-Agile">
                 What is our approach to
                 <span class="text-primary">team</span> assignment and how do we
-                promote cultural &nbsp;<span class="text-primary">changes</span
-                >?
+                promote cultural &nbsp;<span class="text-primary">changes</span>?
               </p>
             </div>
 
-            <ul
-              class="nav nav-pills nav-justified flex-column bg-terciary rounded shadow p-3 mb-0 sticky-bar"
-              id="pills-tab"
-              role="tablist"
-            >
+            <ul class="nav nav-pills nav-justified flex-column bg-terciary rounded shadow p-3 mb-0 sticky-bar"
+              id="pills-tab" role="tablist">
               <div class="li-p-nav">
                 <li class="nav-item">
                   <div class="li-p-style">
-                    <a
-                      class="nav-link text-box-style"
-                      id="agilityA"
-                      data-toggle="pill"
-                      href="#agility"
-                      role="tab"
-                      aria-controls="agility"
-                      aria-selected="false"
-                    >
+                    <a class="nav-link text-box-style" id="agilityA" data-toggle="pill" href="#agility" role="tab"
+                      aria-controls="agility" aria-selected="false">
                       <div class="text-center py-1">
                         <p class="mb-0">Agility Assessment</p>
-                      </div> </a
-                    ><!--end nav link-->
+                      </div>
+                    </a><!--end nav link-->
                   </div>
                 </li>
                 <!--end nav item-->
 
                 <li class="nav-item mt-2">
                   <div class="li-p-style">
-                    <a
-                      class="nav-link text-box-style"
-                      id="technicalA"
-                      data-toggle="pill"
-                      href="#technical"
-                      role="tab"
-                      aria-controls="technical"
-                      aria-selected="false"
-                    >
+                    <a class="nav-link text-box-style" id="technicalA" data-toggle="pill" href="#technical" role="tab"
+                      aria-controls="technical" aria-selected="false">
                       <div class="text-center py-1">
                         <p class="mb-0">Technical Assessment</p>
                       </div>
@@ -525,19 +443,12 @@ export default {
 
                 <li class="nav-item mt-2">
                   <div class="li-p-style">
-                    <a
-                      class="nav-link text-box-style"
-                      id="TeamA"
-                      data-toggle="pill"
-                      href="#Team"
-                      role="tab"
-                      aria-controls="Team"
-                      aria-selected="false"
-                    >
+                    <a class="nav-link text-box-style" id="TeamA" data-toggle="pill" href="#Team" role="tab"
+                      aria-controls="Team" aria-selected="false">
                       <div class="text-center py-1">
                         <p class="mb-0">Team Assignment</p>
-                      </div> </a
-                    ><!--end nav link-->
+                      </div>
+                    </a><!--end nav link-->
                   </div>
                 </li>
                 <!--end nav item-->
@@ -550,27 +461,17 @@ export default {
             <div class="tab-content" id="pills-tabContent">
               <div class="tab-pane fade bg-terciary show active">
                 <div class="position-relative">
-                  <img
-                    src="../assets/images/office-2.png"
-                    class="rounded img-fluid mx-auto d-block shadow rounded"
-                    alt=""
-                  />
+                  <img src="../assets/images/office-2.png" class="rounded img-fluid mx-auto d-block shadow rounded"
+                    alt="" />
                 </div>
               </div>
-              <div
-                class="tab-pane fade bg-terciary p-4 rounded shadow"
-                id="agility"
-                role="tabpanel"
-                aria-labelledby="agilityA"
-              >
+              <div class="tab-pane fade bg-terciary p-4 rounded shadow" id="agility" role="tabpanel"
+                aria-labelledby="agilityA">
                 <div class="align-items-center">
                   <div class="">
                     <div class="position-relative">
-                      <img
-                        src="../assets/images/office-2.png"
-                        class="rounded img-fluid mx-auto d-block shadow rounded"
-                        alt=""
-                      />
+                      <img src="../assets/images/office-2.png" class="rounded img-fluid mx-auto d-block shadow rounded"
+                        alt="" />
                     </div>
                   </div>
                   <div class="">
@@ -590,20 +491,13 @@ export default {
               </div>
               <!--end teb pane-->
 
-              <div
-                class="tab-pane fade bg-terciary p-4 rounded shadow"
-                id="technical"
-                role="tabpanel"
-                aria-labelledby="technicalA"
-              >
+              <div class="tab-pane fade bg-terciary p-4 rounded shadow" id="technical" role="tabpanel"
+                aria-labelledby="technicalA">
                 <div class="align-items-center">
                   <div class="">
                     <div class="position-relative">
-                      <img
-                        src="../assets/images/office-3.png"
-                        class="rounded img-fluid mx-auto d-block shadow rounded"
-                        alt=""
-                      />
+                      <img src="../assets/images/office-3.png" class="rounded img-fluid mx-auto d-block shadow rounded"
+                        alt="" />
                     </div>
                   </div>
                   <div class="">
@@ -624,12 +518,8 @@ export default {
               </div>
               <!--end teb pane-->
 
-              <div
-                class="tab-pane fade bg-terciary p-4 rounded shadow"
-                id="Team"
-                role="tabpanel"
-                aria-labelledby="TeamA"
-              >
+              <div class="tab-pane fade bg-terciary p-4 rounded shadow" id="Team" role="tabpanel"
+                aria-labelledby="TeamA">
                 <div class="row">
                   <div class="col-lg-6 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
                     <div>
@@ -660,11 +550,7 @@ export default {
 
                       <a class="nav-item mt-2">
                         <div class="li-p-style">
-                          <a
-                            class="nav-link text-box-style-4"
-                            data-toggle="pill"
-                            role="tab"
-                          >
+                          <a class="nav-link text-box-style-4" data-toggle="pill" role="tab">
                             <div class="text-center py-1">
                               <p class="mb-0">Agility Assessment</p>
                             </div>
@@ -673,11 +559,7 @@ export default {
                       </a>
                       <a class="nav-item mt-2">
                         <div class="li-p-style">
-                          <a
-                            class="nav-link text-box-style-4"
-                            data-toggle="pill"
-                            role="tab"
-                          >
+                          <a class="nav-link text-box-style-4" data-toggle="pill" role="tab">
                             <div class="text-center py-1">
                               <p class="mb-0">Technical Assessment</p>
                             </div>
@@ -690,11 +572,8 @@ export default {
 
                   <div class="col-lg-6 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
                     <div class="position-relative">
-                      <img
-                        src="../assets/images/office-4.png"
-                        class="rounded img-fluid mx-auto d-block shadow rounded"
-                        alt=""
-                      />
+                      <img src="../assets/images/office-4.png" class="rounded img-fluid mx-auto d-block shadow rounded"
+                        alt="" />
                     </div>
                   </div>
                 </div>
@@ -715,9 +594,7 @@ export default {
           <div>
             <div>
               <p class="building-2">
-                <span class="text-primary"
-                  >Project Portfolio & Case Studies</span
-                >
+                <span class="text-primary">Project Portfolio & Case Studies</span>
               </p>
             </div>
             <div>
@@ -734,7 +611,7 @@ export default {
           </div>
         </div>
       </div>
-     <!--  <div class="container">
+      <!--  <div class="container">
         <div class="row studies-style">
           <div
             class="col-lg-4 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0 position-style"
@@ -897,9 +774,7 @@ export default {
               <div class="col-md-7">
                 <div class="section-title">
                   <div class="media">
-                    <i
-                      class="uil uil-stethoscope-alt display-4 text-white title-dark"
-                    ></i>
+                    <i class="uil uil-stethoscope-alt display-4 text-white title-dark"></i>
                     <div class="media-body ml-md-4 ml-3">
                       <h4 class="font-weight-bold text-light title-dark mb-1">
                         Put Agile Dream Team Solution Delivery to work for you.
@@ -916,13 +791,8 @@ export default {
 
               <div class="col-md-5 mt-4 mt-sm-0">
                 <div class="text-md-right ml-5 ml-sm-0">
-                  <a
-                    href="javascript:void(0)"
-                    class="btn btn-primary mr-2 mr-lg-2 mr-md-0 my-2"
-                    data-toggle="modal"
-                    data-target="#productview"
-                    ><i class="uil uil-file-alt"></i>CONTACT US</a
-                  >
+                  <a href="javascript:void(0)" class="btn btn-primary mr-2 mr-lg-2 mr-md-0 my-2" data-toggle="modal"
+                    data-target="#productview"><i class="uil uil-file-alt"></i>CONTACT US</a>
                 </div>
               </div>
               <!--end col-->
@@ -943,12 +813,8 @@ export default {
     <!-- Footer End -->
 
     <!-- Back to top -->
-    <a
-      href="javascript: void(0);"
-      class="btn btn-icon btn-primary back-to-top"
-      id="back-to-top"
-      v-scroll-to="'#topnav'"
-    >
+    <a href="javascript: void(0);" class="btn btn-icon btn-primary back-to-top" id="back-to-top"
+      v-scroll-to="'#topnav'">
       <arrow-up-icon class="icons"></arrow-up-icon>
     </a>
     <!-- Back to top -->

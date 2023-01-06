@@ -132,11 +132,7 @@ export default {
 <template>
   <div>
     <!-- Navbar STart -->
-    <header
-      id="topnav"
-      class="defaultscroll sticky"
-      :class="{ 'bg-white': isWhiteNavbar === true }"
-    >
+    <header id="topnav" class="defaultscroll sticky" :class="{ 'bg-white': isWhiteNavbar === true }">
       <div class="container">
         <!-- Logo container-->
         <div>
@@ -144,62 +140,34 @@ export default {
             <img src="../assets/images/logo-dark.png" height="65" alt="" />
           </a>
           <a class="logo" href="./" v-else>
-            <img
-              src="../assets/images/logo-dark.png"
-              class="l-dark"
-              height="24"
-              alt=""
-            />
-            <img
-              src="../assets/images/logo-light.png"
-              class="l-light"
-              height="24"
-              alt=""
-            />
+            <img src="../assets/images/logo-dark.png" class="l-dark" height="24" alt="" />
+            <img src="../assets/images/logo-light.png" class="l-light" height="24" alt="" />
           </a>
         </div>
         <ul class="buy-button list-inline mb-0" v-if="isIcons === true">
           <li class="list-inline-item mb-0 developer-icon">
-            <b-dropdown
-              right
-              variant="link"
-              toggle-class="text-decoration-none p-0 pr-2"
-              menu-class="dd-menu dropdown-menu-right bg-white shadow rounded border-0 mt-3 py-0"
-            >
+            <b-dropdown right variant="link" toggle-class="text-decoration-none p-0 pr-2"
+              menu-class="dd-menu dropdown-menu-right bg-white shadow rounded border-0 mt-3 py-0">
               <template #button-content>
                 <i class="mdi mdi-magnify h4 text-muted"></i>
               </template>
               <div style="width: 300px">
                 <form>
-                  <input
-                    type="text"
-                    id="text"
-                    name="name"
-                    class="form-control border bg-white"
-                    placeholder="Search..."
-                  />
+                  <input type="text" id="text" name="name" class="form-control border bg-white"
+                    placeholder="Search..." />
                 </form>
               </div>
             </b-dropdown>
           </li>
           <li class="list-inline-item mb-0 pr-2">
-            <a href="#" class="btn btn-icon btn-soft-primary"
-              ><i class="mdi mdi-github mdi-18px icons"></i
-            ></a>
+            <a href="#" class="btn btn-icon btn-soft-primary"><i class="mdi mdi-github mdi-18px icons"></i></a>
           </li>
           <li class="list-inline-item mb-0 pr-2">
-            <a href="#" class="btn btn-icon btn-soft-primary"
-              ><i class="mdi mdi-stack-overflow mdi-18px icons"></i
-            ></a>
+            <a href="#" class="btn btn-icon btn-soft-primary"><i class="mdi mdi-stack-overflow mdi-18px icons"></i></a>
           </li>
           <li class="list-inline-item mb-0">
-            <a
-              href="javascript:void(0)"
-              class="btn btn-icon btn-soft-primary"
-              data-toggle="modal"
-              data-target="#productview"
-              ><i class="mdi mdi-account-outline mdi-18px icons"></i
-            ></a>
+            <a href="javascript:void(0)" class="btn btn-icon btn-soft-primary" data-toggle="modal"
+              data-target="#productview"><i class="mdi mdi-account-outline mdi-18px icons"></i></a>
           </li>
         </ul>
         <!--end login button-->
@@ -208,11 +176,7 @@ export default {
         <div class="menu-extras">
           <div class="menu-item">
             <!-- Mobile menu toggle-->
-            <a
-              class="navbar-toggle"
-              @click="toggleMenu()"
-              :class="{ open: isCondensed === true }"
-            >
+            <a class="navbar-toggle" @click="toggleMenu()" :class="{ open: isCondensed === true }">
               <div class="lines">
                 <span></span>
                 <span></span>
@@ -225,52 +189,24 @@ export default {
 
         <div id="navigation">
           <!-- Navigation Menu-->
-          <ul
-            class="navigation-menu"
-            :class="{ 'nav-light': navLight === true }"
-          >
+          <ul class="navigation-menu" :class="{ 'nav-light': navLight === true }">
             <li class="has-submenu">
-              <a
-                href="javascript:void(0)"
-                id="approach-to-top"
-                class="approach-a-li"
-                v-scroll-to="'#services'"
-                @click="null"
-                >Services</a
-              >
+              <a href="javascript:void(0)" id="approach-to-top" class="approach-a-li" v-scroll-to="'#services'"
+                @click="null">Services</a>
             </li>
 
             <li class="has-submenu">
-              <NuxtLink
-              to="/clients"
-                href="javascript:void(0)"
-                @click="null"
-                id="about-to-top"
-                class="approach-a-li"
-                v-scroll-to="'#clients'"
-                >Clients</NuxtLink
-              >
+              <NuxtLink to="/clients" href="javascript:void(0)" @click="null" id="about-to-top" class="approach-a-li"
+                v-scroll-to="'#clients'">Clients</NuxtLink>
 
             </li>
             <li class="has-submenu">
-              <a
-                href="javascript:void(0)"
-                id="approach-to-top"
-                class="approach-a-li"
-                v-scroll-to="'#approach'"
-                @click="null"
-                >Approach</a
-              >
+              <a href="javascript:void(0)" id="approach-to-top" class="approach-a-li" v-scroll-to="'#approach'"
+                @click="null">Approach</a>
             </li>
             <li class="has-submenu">
-              <a
-                href="javascript:void(0)"
-                @click="null"
-                id="footer-to-top"
-                v-scroll-to="'#footer'"
-                class="approach-a-li"
-                >Hire us</a
-              >
+              <a href="javascript:void(0)" @click="null" id="footer-to-top" v-scroll-to="'#footer'"
+                class="approach-a-li">Hire us</a>
             </li>
           </ul>
           <!--end login button-->

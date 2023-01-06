@@ -27,18 +27,10 @@ export default {
 
 <template>
   <div class="row">
-    <div
-      class="col-lg-3 col-md-6 mt-4 pt-2"
-      v-for="(item, index) in teamData"
-      :key="index"
-    >
+    <div class="col-lg-3 col-md-6 mt-4 pt-2" v-for="(item, index) in teamData" :key="index">
       <div class="card team text-center border-0">
         <div class="position-relative">
-          <img
-            :src="`${item.image}`"
-            class="img-fluid avatar avatar-ex-large rounded-circle shadow"
-            alt=""
-          />
+          <img :src="`${item.image}`" class="img-fluid avatar avatar-ex-large rounded-circle shadow" alt="" />
           <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
             <li class="list-inline-item">
               <a href="javascript:void(0)" class="rounded">
