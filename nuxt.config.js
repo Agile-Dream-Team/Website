@@ -28,18 +28,17 @@ export default {
   ssr: false,
 
   // Target: https://go.nuxtjs.dev/config-target
-  target: "static",
+  target: 'static',
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
 
   generate: {
     fallback: true,
     subFolders: false,
-    dir: '/dist',
+    dir: 'equipo de ensueño ágil/dist',
     cache: {
       ignore: ['renovate.json'] // ignore changes applied on this file
-    },
-    crawler: false
+    }
   },
   /*  router : {
     base: '/agiledreamteam/'
