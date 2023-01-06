@@ -6,6 +6,7 @@
     "dev": "nuxt",
     "stagingbuild": "NODE_ENV=staging nuxt generate",
     "staging": "NODE_ENV=staging nuxt start",
+    "build": "nuxt build",
     "production": "NODE_ENV=production nuxt dev",
     "start": "nuxt start",
     "generate": "nuxt generate",
