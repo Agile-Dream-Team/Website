@@ -34,6 +34,7 @@ export default {
 
   generate: {
     fallback: true,
+    subFolders: false
   },
   /*  router : {
     base: '/agiledreamteam/'
