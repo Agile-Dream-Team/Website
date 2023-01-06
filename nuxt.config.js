@@ -35,7 +35,7 @@ export default {
   generate: {
     fallback: true,
     subFolders: false,
-    dir: 'dist',
+    dir: '/dist',
     cache: {
       ignore: ['renovate.json'] // ignore changes applied on this file
     },
