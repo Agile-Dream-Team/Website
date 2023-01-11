@@ -3,13 +3,12 @@ const appEnv = process.env.NODE_ENV || "development";
 import axios from "axios";
 
 let dynamicRoutes = () => {
-  const routes = axios
-    .get
-    // "https://jamstack.offilawyer.com//wp-json/wp/v2/posts?page=1&per_page=20"
-    ()
-    .then((res) => {
-      // return res.data.map((post) => `/blog/${post.slug}`);
-    });
+  const routes = axios.get;
+  "https://jamstack.offilawyer.com//wp-json/wp/v2/posts?page=1&per_page=20"().then(
+    (res) => {
+      return res.data.map((post) => `/blog/${post.slug}`);
+    }
+  );
   // console.log(routes);
   return routes;
 };
@@ -29,8 +28,22 @@ export default {
   ssr: false,
 
   // Target: https://go.nuxtjs.dev/config-target
-  target: "static",
+  target: 'static',
+  // Content module configuration: https://go.nuxtjs.dev/config-content
+  content: {},
 
+  generate: {
+    fallback: true,
+    subFolders: false,
+    dir: 'dist',
+    cache: {
+      ignore: ['renovate.json'] // ignore changes applied on this file
+    }
+  },
+  /*  router : {
+    base: '/agiledreamteam/'
+  },
+ */
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "Agile Dream Team",
@@ -40,10 +53,10 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
-      { name: "format-detection", content: "telephone=no" },
+      { hid: "description", name: "description", content: "Agile Dream Team description" },
+    /*   { name: "format-detection", content: "telephone=no" }, */
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -89,13 +102,6 @@ export default {
         httpEndpoint: "https://jamstack.offilawyer.com/graphql",
       },
     },
-  },
-
-  // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
-
-  generate: {
-    // routes: dynamicRoutes,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

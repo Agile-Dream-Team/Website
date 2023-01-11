@@ -36,7 +36,7 @@
  *     03.  Helper RTL           *
  *     04.  Menu RTL             *
  ================================*
- 
+
  *********************************
  *         Dark SCSS             *
  *********************************
@@ -47,7 +47,7 @@
  *     05.  Helper               *
  *     06.  Menu                 *
  ================================*
- 
+
  *********************************
  *         Dark RTL SCSS         *
  *********************************
@@ -2411,11 +2411,12 @@ p {
 
 .home-wrapper:before {
   content: "";
+  display: flex;
   position: absolute;
-  bottom: 40rem;
+  bottom: 15rem;
   right: 0rem;
-  width: 90rem;
-  height: 35rem;
+  width: 57rem;
+  height: 26rem;
   -webkit-transform: rotate(78.75deg);
           transform: rotate(78.75deg);
   background: -webkit-gradient(linear, left top, right top, from(rgba(47, 85, 212, 0.3)), to(transparent));

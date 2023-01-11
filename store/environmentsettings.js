@@ -9,7 +9,7 @@ const GlobalSettings = {
   },
   production: {
     siteEnvironment: "Production",
-    // LogRegBaseURL: "https://app.offilawyer.com",
+     LogRegBaseURL: "https://agiledreamteam.netlify.app/",
   },
 };
 
